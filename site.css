@@ -405,6 +405,66 @@ a.badge:hover {
   font-variant-numeric: tabular-nums;
 }
 
+.promise {
+  margin-block-start: clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  background: var(--accent);
+  border-radius: 28px;
+  box-shadow: var(--shadow-lg);
+  color: var(--on-accent);
+  text-align: center;
+}
+
+.promise .eyebrow {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.promise h2 {
+  max-inline-size: 22ch;
+  margin: 0 auto 1rem;
+  font-size: clamp(1.875rem, 5vw, 2.75rem);
+  line-height: 1.15;
+}
+
+.promise p {
+  max-inline-size: 56ch;
+  margin-inline: auto;
+  font-size: 1.0625rem;
+}
+
+.promise-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promise-list li {
+  padding: 0.4rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.promise-list li::before {
+  content: "✕ ";
+  opacity: 0.75;
+}
+
+.stat-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.stat-link:hover {
+  color: var(--accent);
+}
+
 .section {
   padding-block: clamp(2.5rem, 6vw, 4rem) 0;
 }
