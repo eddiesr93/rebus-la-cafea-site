@@ -10,6 +10,8 @@
   --selection: #d6e5db;
   --surface: #fffdf8;
   --on-accent: #ffffff;
+  --shadow: 0 1px 2px rgb(32 43 37 / 0.06), 0 6px 20px rgb(32 43 37 / 0.1);
+  --shadow-lg: 0 2px 6px rgb(32 43 37 / 0.08), 0 18px 40px -8px rgb(32 43 37 / 0.28);
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
   --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -291,25 +293,41 @@ a.badge:hover {
   background: var(--selection);
 }
 
-.phone {
-  margin: 0;
-  padding: 7px;
-  background: #202b25;
-  border-radius: 2.4rem;
-  box-shadow: 0 1.5rem 3rem -1.5rem rgb(0 0 0 / 0.5);
+.hero-visual {
+  position: relative;
+  inline-size: min(100%, 20rem);
+  margin: 0 auto;
+  padding-block: 1.5rem 3.25rem;
 }
 
-.phone img {
+.hero-main {
   display: block;
   inline-size: 100%;
   block-size: auto;
-  border-radius: 2rem;
+  border-radius: 28px;
+  box-shadow: var(--shadow-lg);
 }
 
-.hero-phone {
-  inline-size: min(100%, 17rem);
-  justify-self: center;
-  transform: rotate(2deg);
+.float {
+  position: absolute;
+  block-size: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.float-keys {
+  inset-block-start: 0;
+  inset-inline-end: -2.5rem;
+  inline-size: 78%;
+  border-radius: 14px;
+  transform: rotate(3deg);
+}
+
+.float-stats {
+  inset-block-end: 0;
+  inset-inline-start: -3rem;
+  inline-size: 92%;
+  border-radius: 22px;
+  transform: rotate(-2deg);
 }
 
 .cta-note {
@@ -318,33 +336,43 @@ a.badge:hover {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
 }
 
-.shot {
+.card {
   margin: 0;
 }
 
-.shot .phone {
-  padding: 5px;
-  border-radius: 1.6rem;
+.card-media {
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
-.shot .phone img {
-  border-radius: 1.3rem;
+.card-media img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  transition: transform 0.4s ease;
 }
 
-.shot figcaption {
+.card:hover .card-media img {
+  transform: scale(1.03);
+}
+
+.card figcaption {
   margin-block-start: 0.9rem;
   color: var(--secondary);
   font-size: 0.9375rem;
   line-height: 1.45;
 }
 
-.shot figcaption strong {
+.card figcaption strong {
   display: block;
   color: var(--ink);
+  font-size: 1.0625rem;
 }
 
 .plans-cta {
@@ -404,10 +432,11 @@ a.badge:hover {
 
 .features li,
 .plan {
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem;
   background: var(--surface);
   border: 1px solid var(--rule);
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
 }
 
 .features h3,
@@ -511,23 +540,31 @@ a.badge:hover {
     grid-template-columns: 1fr;
   }
 
-  .hero-phone {
-    inline-size: min(70%, 15rem);
+  .hero-visual {
+    inline-size: min(72%, 17rem);
+  }
+
+  .float-keys {
+    inset-inline-end: -1.5rem;
+  }
+
+  .float-stats {
+    inset-inline-start: -1.5rem;
   }
 
   .gallery {
     grid-auto-flow: column;
     grid-template-columns: none;
-    grid-auto-columns: 62%;
+    grid-auto-columns: 72%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding-block-end: 1rem;
+    padding-block: 0.5rem 1.5rem;
     margin-inline: calc(var(--gutter) * -1);
     padding-inline: var(--gutter);
     scroll-padding-inline: var(--gutter);
   }
 
-  .shot {
+  .card {
     scroll-snap-align: start;
   }
 }
@@ -559,5 +596,7 @@ a.badge:hover {
     --selection: #425e4d;
     --surface: #1c2621;
     --on-accent: #10231a;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 20px rgb(0 0 0 / 0.35);
+    --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.3), 0 18px 40px -8px rgb(0 0 0 / 0.6);
   }
 }
