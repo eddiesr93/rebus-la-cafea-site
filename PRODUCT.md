@@ -36,7 +36,7 @@ Careuri written for Romanian from the start: Ă, Â, Î, Ș, Ț are distinct let
 
 ## Capabilities and Constraints
 
-- Content as of version 1.1 (in App Review on 11 Oct 2026; the site describes 1.1 and must not be published before 1.1 is live): 100 permanently free main careuri; Premium has 40 (the general collection of 30 plus the thematic pack „Strigoi și dovleci”); 140 main careuri total. Sizes 5×5 to 7×7. Premium includes new thematic packs added through app updates, with no promised cadence or end date; never present future themes as available.
+- Content as of version 1.1 (live on the App Store since 12 Oct 2026; the site describes 1.1): 100 permanently free main careuri; Premium has 40 (the general collection of 30 plus the thematic pack „Strigoi și dovleci”); 140 main careuri total. Sizes 5×5 to 7×7. Premium includes new thematic packs added through app updates, with no promised cadence or end date; never present future themes as available.
 - „Strigoi și dovleci”: 10 careuri of Romanian night folklore (strigoi, moroi, iele, Sfântul Andrei), 2 Ușor / 3 Mediu / 5 Greu; the first, „Musafiri deghizați”, is a free sample; „Miezul nopții” is the special challenge. In-app event 18 Oct – 3 Nov 2026; the site may feature it in a temporary, removable section.
 - „Careul zilei”: a free series of 60 daily 9 × 9 challenges, one per day by Romanian time, starting the day the app is first opened; past days stay in an archive, future days are locked; no new dailies are promised after day 60.
 - Free helpers: „Verifică”, „O literă”, „Indiciu”; explanations after a word is solved.
