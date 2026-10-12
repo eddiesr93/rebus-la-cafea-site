@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rebus la cafea: careuri românești pentru iPhone, cu diacritice adevărate, o provocare nouă în fiecare zi și 100 de careuri gratuite. Fără reclame, iar așa va rămâne. Fără cont, fără abonament.">
-  <meta name="theme-color" content="#f6f2e9" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#151d19" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Rebus la cafea: careuri românești pentru iPhone, cu Ă, Â, Î, Ș și Ț pe tastatură, o provocare nouă în fiecare zi și 100 de careuri gratuite. Fără reclame, iar așa va rămâne. Fără cont, fără abonament.">
+  <meta name="theme-color" content="#173a2b">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ro_RO">
   <meta property="og:site_name" content="Rebus la cafea">
@@ -21,221 +20,314 @@
   <link rel="canonical" href="https://eddiesr93.github.io/rebus-la-cafea-site/">
   <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <a class="skip-link" href="#continut">Mergi la conținut</a>
-  <header class="site-header frame">
-    <a class="brand" href="./" aria-current="page"><img src="img/apple-touch-icon.png" alt="" width="36" height="36">Rebus la cafea</a>
-    <nav class="site-nav" aria-label="Navigație principală">
-      <a href="#joc">Jocul</a>
-      <a href="#premium">Premium</a>
-      <a href="#suport">Suport</a>
-      <a href="confidentialitate/">Confidențialitate</a>
-    </nav>
-  </header>
 
-  <main id="continut">
-    <section class="hero frame" aria-labelledby="hero-titlu">
-      <div class="hero-text">
-        <p class="eyebrow">Careuri românești pentru iPhone</p>
-        <h1 id="hero-titlu">O pauză scurtă, un careu bun.</h1>
-        <p class="lede">Careuri scrise în română, cu diacritice adevărate, indicii care te pun pe gânduri și o provocare nouă în fiecare zi. Fără reclame, fără cont, fără grabă.</p>
-        <div class="cta-row">
-          <a class="badge" href="https://apps.apple.com/ro/app/id6819084037?pt=129528005&amp;ct=site&amp;mt=8">Descarcă gratuit din App Store</a>
-          <a class="button-link" href="#ecrane">Vezi cum arată</a>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-across" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-enter" viewBox="0 0 24 24"><path d="M19 5v6a3 3 0 0 1-3 3H6M10 10l-4 4 4 4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 6.5h16v11H4zM4.5 7l7.5 6 7.5-6"/></symbol>
+  </svg>
+
+  <div class="case case-top">
+    <header class="site-header frame">
+      <a class="brand" href="./" aria-current="page"><img src="img/apple-touch-icon.png" alt="" width="40" height="40">Rebus la cafea</a>
+      <nav class="fn-row" aria-label="Navigație principală">
+        <a class="fn" href="#joc">Jocul</a>
+        <a class="fn" href="#premium">Premium</a>
+        <a class="fn" href="#suport">Suport</a>
+        <a class="fn fn-wide" href="confidentialitate/">Confidențialitate</a>
+      </nav>
+    </header>
+
+    <main id="continut">
+      <section class="hero frame" aria-labelledby="hero-titlu">
+        <div class="hero-words">
+          <h1 id="hero-titlu">O pauză scurtă, un&nbsp;careu bun.</h1>
+          <p class="lede">Careuri scrise de la zero în română, cu toate literele ei la îndemână și o provocare nouă în fiecare zi. Fără reclame, fără cont, fără grabă.</p>
         </div>
-        <p class="meta cta-note">Pentru iPhone · Gratuit · <strong>Fără reclame, pentru totdeauna</strong></p>
-      </div>
 
-      <figure class="hero-visual">
-        <img class="hero-main" src="img/joc.webp" alt="Careul 116 în lucru: FOAIE completat pe verticală și definiția „Plantă de cultură ale cărei boabe se adună în spic”." width="800" height="1117" fetchpriority="high">
-        <img class="float float-keys" src="img/diacritice.webp" alt="Rândul de taste Ă, Â, Î, Ș, Ț." width="720" height="101">
-        <img class="float float-stats" src="img/serie.webp" alt="Seria zilnică: zile la rând, record și 0 din 60 rezolvate." width="720" height="136">
-      </figure>
-    </section>
+        <div class="deck" role="group" aria-labelledby="demo-titlu">
+          <input class="key-input" type="radio" name="litera" id="k-a" value="Ă">
+          <input class="key-input" type="radio" name="litera" id="k-aa" value="Â">
+          <input class="key-input" type="radio" name="litera" id="k-i" value="Î">
+          <input class="key-input" type="radio" name="litera" id="k-s" value="Ș">
+          <input class="key-input" type="radio" name="litera" id="k-t" value="Ț">
 
-    <section class="stats frame" aria-label="Pe scurt">
-      <p><strong>100</strong> careuri gratuite</p>
-      <p><strong>60</strong> de provocări zilnice</p>
-      <p><a class="stat-link" href="#fara-reclame"><strong>0</strong> reclame, niciodată</a></p>
-    </section>
+          <div class="board" role="img" aria-label="Careul „Încă o înghițitură”, 5 pe 5. Pe primul rând: R, O, o căsuță goală, U.">
+            <span class="cell r0 n" data-n="1">R</span><span class="cell r0">O</span><span class="cell r0 target"><span class="caret"></span><span class="try try-a">Ă</span><span class="try try-aa">Â</span><span class="try try-i">Î</span><span class="try try-s">Ș</span><span class="try try-t">Ț</span></span><span class="cell r0">U</span><span class="cell block r0"></span>
+            <span class="cell">E</span><span class="cell block"></span><span class="cell block"></span><span class="cell block"></span><span class="cell n" data-n="2"></span>
+            <span class="cell n" data-n="3">C</span><span class="cell"></span><span class="cell n" data-n="4"></span><span class="cell"></span><span class="cell"></span>
+            <span class="cell">U</span><span class="cell block"></span><span class="cell"></span><span class="cell block"></span><span class="cell"></span>
+            <span class="cell">L</span><span class="cell block"></span><span class="cell"></span><span class="cell block"></span><span class="cell"></span>
+          </div>
 
+          <div class="clue">
+            <p class="clue-dir" id="demo-titlu"><svg class="icon" aria-hidden="true"><use href="#i-across"/></svg>1 Orizontal · 4 litere</p>
+            <p class="clue-text">Culoarea sângelui și a macului.</p>
+            <p class="fb fb-none">Apasă litera care lipsește.</p>
+            <p class="fb fb-a"><svg class="icon" aria-hidden="true"><use href="#i-cross"/></svg>„ROĂU”? Nu există. Mai încearcă.</p>
+            <p class="fb fb-aa"><svg class="icon" aria-hidden="true"><use href="#i-cross"/></svg>„ROÂU”? Nici așa. Mai încearcă.</p>
+            <p class="fb fb-i"><svg class="icon" aria-hidden="true"><use href="#i-cross"/></svg>„ROÎU”? Aproape poetic, dar nu.</p>
+            <p class="fb fb-t"><svg class="icon" aria-hidden="true"><use href="#i-cross"/></svg>„ROȚU” sună a roată, nu a culoare.</p>
+            <p class="fb fb-s"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>ROȘU. Aici Ș are căsuța lui, nu e un S cu pretenții.</p>
+          </div>
+
+          <div class="keys">
+            <label class="key key-dia" for="k-a"><span class="cap">Ă</span></label>
+            <label class="key key-dia" for="k-aa"><span class="cap">Â</span></label>
+            <label class="key key-dia" for="k-i"><span class="cap">Î</span></label>
+            <label class="key key-dia key-home" for="k-s"><span class="cap">Ș</span></label>
+            <label class="key key-dia" for="k-t"><span class="cap">Ț</span></label>
+          </div>
+
+          <a class="key-iso hero-enter" href="https://apps.apple.com/ro/app/id6819084037?pt=129528005&amp;ct=site&amp;mt=8"><span class="iso-top"><span class="enter-text"><strong>Descarcă gratuit</strong> din App Store</span><svg class="icon enter-icon iso-icon-inline" aria-hidden="true"><use href="#i-enter"/></svg></span><span class="iso-stem" aria-hidden="true"><svg class="icon enter-icon"><use href="#i-enter"/></svg></span></a>
+        </div>
+
+        <p class="hero-note">Pentru iPhone · 100 de careuri gratuite · <a href="#fara-reclame">Fără reclame, pentru totdeauna</a></p>
+      </section>
+    </main>
+  </div>
+
+  <div class="paper">
     <section class="promise frame" id="fara-reclame" aria-labelledby="promisiune-titlu">
-      <p class="eyebrow">Promisiunea noastră</p>
-      <h2 id="promisiune-titlu">Fără reclame. Nici acum, nici mai târziu.</h2>
-      <p>Rebus la cafea nu are reclame și nu va avea. Fără bannere peste careu, fără clipuri de 30 de secunde ca să primești un indiciu, fără ferestre care apar între careuri.</p>
-      <p>Aplicația se susține din Premium, plătit o singură dată, nu din atenția ta. Pauza de cafea rămâne a ta.</p>
-      <ul class="promise-list">
-        <li>Fără bannere</li>
-        <li>Fără clipuri pentru indicii</li>
-        <li>Fără pop-up-uri</li>
-        <li>Fără urmărire</li>
-      </ul>
+      <div class="spacebar">
+        <h2 id="promisiune-titlu">Fără reclame. Nici acum, nici mai târziu.</h2>
+      </div>
+      <div class="promise-body rail">
+        <p>Rebus la cafea nu are reclame și nu va avea. Fără bannere peste careu, fără clipuri de 30 de secunde ca să primești un indiciu, fără ferestre care apar între careuri.</p>
+        <p>Aplicația se susține din Premium, plătit o singură dată, nu din atenția ta. Pauza de cafea rămâne a ta.</p>
+        <ul class="mods" aria-label="Ce nu există în aplicație">
+          <li>Bannere</li>
+          <li>Clipuri pentru indicii</li>
+          <li>Pop-up-uri</li>
+          <li>Urmărire</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="section frame" id="ecrane" aria-labelledby="ecrane-titlu">
-      <h2 id="ecrane-titlu">Cum arată</h2>
-      <p class="section-lede">Capturi de pe iPhone. Totul în română, de la definiții la tastatură.</p>
-      <div class="gallery">
-        <figure class="card">
-          <div class="card-media">
-            <img src="img/acasa.webp" alt="Ecranul Acasă: careul „Încă o înghițitură”, 8 din 17 căsuțe completate." width="720" height="900" loading="lazy">
-          </div>
-          <figcaption><strong>Acasă</strong> Continui de unde ai rămas, cu un careu nou pe teme.</figcaption>
+    <section class="screens frame" id="ecrane" aria-labelledby="ecrane-titlu">
+      <div class="section-head rail">
+        <h2 id="ecrane-titlu">Cum arată pe iPhone</h2>
+        <p>Capturi din aplicație. Totul în română, de la definiții la tastatură.</p>
+      </div>
+      <div class="shots">
+        <figure class="shot shot-lead">
+          <picture>
+            <source srcset="img/ecran-03-game-typing-dark.webp" media="(prefers-color-scheme: dark)">
+            <img src="img/ecran-03-game-typing.webp" alt="Careul 1 în lucru: CAS completat pe orizontală, definiția „Clădire folosită ca locuință” și tastatura cu rândul Ă, Â, Î, Ș, Ț." width="600" height="1304" loading="lazy">
+          </picture>
+          <figcaption><strong>Careul</strong> Definiția sub grilă, patru ajutoare și tastatura cu rândul de diacritice.</figcaption>
         </figure>
-        <figure class="card">
-          <div class="card-media">
-            <img src="img/zilei.webp" alt="Careul zilei, ziua 5: grilă 9 × 9 și definiția „Trasează cercuri perfecte, fără să te bazezi pe ochi”." width="720" height="900" loading="lazy">
-          </div>
-          <figcaption><strong>Careul zilei</strong> O provocare 9 × 9 pe zi, cu definiții mai jucăușe.</figcaption>
+        <figure class="shot">
+          <picture>
+            <source srcset="img/ecran-08-completion-dark.webp" media="(prefers-color-scheme: dark)">
+            <img src="img/ecran-08-completion.webp" alt="Ecranul de final „Careu gata. Pauză reușită.” cu ceașca de cafea și rezumatul careului „Prima pauză”." width="600" height="1304" loading="lazy">
+          </picture>
+          <figcaption><strong>Careu gata.</strong> Fără scor și fără cronometru. O ceașcă și atât.</figcaption>
         </figure>
-        <figure class="card">
-          <div class="card-media">
-            <img src="img/calendar.webp" alt="Calendarul seriei zilnice pentru octombrie 2026." width="720" height="900" loading="lazy">
-          </div>
-          <figcaption><strong>Seria ta</strong> Zile la rând, record și un calendar cu tot ce ai rezolvat.</figcaption>
+        <figure class="shot">
+          <picture>
+            <source srcset="img/ecran-11-daily-dark.webp" media="(prefers-color-scheme: dark)">
+            <img src="img/ecran-11-daily.webp" alt="Ecranul „Careul zilei”: Ziua 3 din 60, provocare 9&nbsp;×&nbsp;9, seria zilnică și calendarul lunii octombrie." width="600" height="1304" loading="lazy">
+          </picture>
+          <figcaption><strong>Careul zilei</strong> O provocare 9&nbsp;×&nbsp;9 pe zi, din ziua în care deschizi aplicația.</figcaption>
+        </figure>
+        <figure class="shot">
+          <picture>
+            <source srcset="img/ecran-01-home-dark.webp" media="(prefers-color-scheme: dark)">
+            <img src="img/ecran-01-home.webp" alt="Ecranul Acasă: careul „Prima pauză” cu butonul „Începe careul”, pachetul „Strigoi și dovleci” și Careul zilei, ziua 3 din 60." width="600" height="1304" loading="lazy">
+          </picture>
+          <figcaption><strong>Acasă</strong> Careul următor, pachetul nou și provocarea zilei, pe același ecran.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section frame" id="joc" aria-labelledby="joc-titlu">
-      <h2 id="joc-titlu">Făcut pentru cine iubește cuvintele</h2>
-      <p class="section-lede">Un joc liniștit, gândit de la început pentru limba română.</p>
-      <ul class="features">
+    <section class="clues frame" id="joc" aria-labelledby="joc-titlu">
+      <div class="section-head rail">
+        <h2 id="joc-titlu">Făcut pentru cine iubește cuvintele</h2>
+        <p>Un joc liniștit, gândit de la început pentru limba română. Șase definiții, cu răspunsurile date.</p>
+      </div>
+      <ol class="clue-list rail">
         <li>
-          <h3>Româna, cu toate literele ei</h3>
-          <p>Ă, Â, Î, Ș și Ț stau deasupra tastaturii, la îndemână. În careu sunt litere distincte, exact cum trebuie.</p>
+          <h3><span class="idx">1<svg class="icon" aria-hidden="true"><use href="#i-across"/></svg></span>Literele pe care alte jocuri le uită</h3>
+          <p class="answer-row"><span class="answer" role="img" aria-label="Răspuns: Ă, Â, Î, Ș, Ț"><span>Ă</span><span>Â</span><span>Î</span><span>Ș</span><span>Ț</span></span><span class="len">Orizontal · 5 litere</span></p>
+          <p>Au rândul lor deasupra tastaturii și căsuța lor în careu. A nu ține locul lui Ă, iar I nu ține locul lui Î.</p>
         </li>
         <li>
-          <h3>Careul zilei</h3>
-          <p>O serie de 60 de provocări gratuite, câte una pe zi. Ai ratat o zi? O găsești în arhivă.</p>
+          <h3><span class="idx">2<svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span>Vine o dată pe zi, după ora României</h3>
+          <p class="answer-row"><span class="answer" role="img" aria-label="Răspuns: zilnic"><span>Z</span><span>I</span><span>L</span><span>N</span><span>I</span><span>C</span></span><span class="len">Vertical · 6 litere</span></p>
+          <p>„Careul zilei” e o serie gratuită de 60 de provocări 9&nbsp;×&nbsp;9. Ai ratat o zi? O găsești în arhivă.</p>
         </li>
         <li>
-          <h3>Ajutor, nu spoilere</h3>
+          <h3><span class="idx">3<svg class="icon" aria-hidden="true"><use href="#i-across"/></svg></span>Te pune pe drumul bun fără să-ți dea răspunsul</h3>
+          <p class="answer-row"><span class="answer" role="img" aria-label="Răspuns: indiciu"><span>I</span><span>N</span><span>D</span><span>I</span><span>C</span><span>I</span><span>U</span></span><span class="len">Orizontal · 7 litere</span></p>
           <p>„Verifică”, „O literă” și „Indiciu” sunt gratuite. După ce rezolvi cuvântul, poți citi explicația.</p>
         </li>
         <li>
-          <h3>Joci oriunde</h3>
-          <p>Merge și fără internet. Progresul se salvează pe dispozitiv, automat, cât timp scrii.</p>
+          <h3><span class="idx">4<svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span>Unde poți juca, chiar și fără semnal</h3>
+          <p class="answer-row"><span class="answer" role="img" aria-label="Răspuns: oriunde"><span>O</span><span>R</span><span>I</span><span>U</span><span>N</span><span>D</span><span>E</span></span><span class="len">Vertical · 7 litere</span></p>
+          <p>Merge fără internet. Progresul se salvează pe telefon, automat, cât timp scrii.</p>
         </li>
         <li>
-          <h3>Continui pe alt dispozitiv</h3>
+          <h3><span class="idx">5<svg class="icon" aria-hidden="true"><use href="#i-across"/></svg></span>Te așteaptă pe celălalt dispozitiv</h3>
+          <p class="answer-row"><span class="answer" role="img" aria-label="Răspuns: iCloud"><span>I</span><span>C</span><span>L</span><span>O</span><span>U</span><span>D</span></span><span class="len">Orizontal · 6 litere</span></p>
           <p>Sincronizarea prin iCloud e inclusă gratuit, pe dispozitivele care folosesc același cont.</p>
         </li>
         <li>
-          <h3>Doar tu și careul</h3>
-          <p>Fără reclame, cronometru sau penalizări. Fără cont nou și fără urmărire.</p>
+          <h3><span class="idx">6<svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span>Liniștea unei pauze fără cronometru</h3>
+          <p class="answer-row"><span class="answer" role="img" aria-label="Răspuns: tihnă"><span>T</span><span>I</span><span>H</span><span>N</span><span>Ă</span></span><span class="len">Vertical · 5 litere</span></p>
+          <p>Fără cronometru, penalizări sau cont nou. Doar tu și careul.</p>
         </li>
+      </ol>
+    </section>
+  </div>
+
+  <!-- Secțiune temporară: „Strigoi și dovleci”. Se scoate după evenimentul din 3 noiembrie 2026. -->
+  <section class="night" id="strigoi" aria-labelledby="strigoi-titlu">
+    <div class="frame night-inner">
+      <div class="night-words rail">
+        <h2 id="strigoi-titlu">Strigoi și dovleci</h2>
+        <p class="night-lede">Pachetul de toamnă: 10 careuri despre strigoi, moroi, iele, castele și noaptea de Sfântul Andrei.</p>
+        <ul class="night-facts">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Primul careu, „Musafiri deghizați”, e gratuit pentru toți.</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Celelalte nouă sunt incluse în Premium, până la „Miezul nopții”, provocarea specială.</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Eveniment în aplicație între 18 octombrie și 3 noiembrie.</li>
+        </ul>
+      </div>
+      <figure class="night-grid">
+        <div class="board board-night" role="img" aria-label="Grila 6 pe 6 a careului „Musafiri deghizați”, cu un cuvânt vertical de 4 litere evidențiat.">
+          <span class="cell n" data-n="1"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell block"></span>
+          <span class="cell"></span><span class="cell block"></span><span class="cell block"></span><span class="cell block"></span><span class="cell block"></span><span class="cell block"></span>
+          <span class="cell n" data-n="2"></span><span class="cell"></span><span class="cell"></span><span class="cell block"></span><span class="cell n on head" data-n="3"></span><span class="cell block"></span>
+          <span class="cell"></span><span class="cell block"></span><span class="cell block"></span><span class="cell n" data-n="4"></span><span class="cell on"></span><span class="cell"></span>
+          <span class="cell"></span><span class="cell block"></span><span class="cell block"></span><span class="cell block"></span><span class="cell on"></span><span class="cell block"></span>
+          <span class="cell n" data-n="5"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell on"></span><span class="cell block"></span>
+        </div>
+        <figcaption><span class="clue-dir"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>3 Vertical · 4 litere</span> Pasăre de noapte, rudă cu bufnița.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="paper">
+    <section class="premium frame" id="premium" aria-labelledby="premium-titlu">
+      <div class="section-head rail">
+        <h2 id="premium-titlu">Începi gratuit. Premium, o singură dată.</h2>
+        <p>Fără abonament și fără surprize: plătești o dată și primești și pachetele care vin.</p>
+      </div>
+      <ul class="ledger rail" aria-label="Ce primești">
+        <li><span>100 de careuri principale, permanent gratuite</span><span class="tag">Gratuit</span></li>
+        <li><span>„Careul zilei”: 60 de provocări 9&nbsp;×&nbsp;9</span><span class="tag">Gratuit</span></li>
+        <li><span>Primul careu din „Strigoi și dovleci”</span><span class="tag">Gratuit</span></li>
+        <li><span>Toate ajutoarele și explicațiile</span><span class="tag">Gratuit</span></li>
+        <li><span>Sincronizare prin iCloud</span><span class="tag">Gratuit</span></li>
+        <li><span>Fără reclame, pentru totdeauna</span><span class="tag">Gratuit</span></li>
+        <li><span>40 de careuri în plus, printre care pachetul „Strigoi și dovleci”</span><span class="tag tag-premium">Premium</span></li>
+        <li><span>Pachetele tematice noi, incluse fără cost suplimentar</span><span class="tag tag-premium">Premium</span></li>
       </ul>
-    </section>
-
-    <section class="section frame" id="premium" aria-labelledby="premium-titlu">
-      <h2 id="premium-titlu">Începi gratuit. Premium, o singură dată.</h2>
-      <p class="section-lede">Fără abonament și fără surprize: plătești o dată și primești și pachetele care vin.</p>
-      <div class="plans">
-        <article class="plan">
-          <h3>Gratuit</h3>
-          <ul>
-            <li>100 de careuri principale</li>
-            <li>60 de provocări în „Careul zilei”</li>
-            <li>Toate ajutoarele</li>
-            <li>Sincronizare iCloud</li>
-            <li><strong>Fără reclame, pentru totdeauna</strong></li>
-          </ul>
-        </article>
-        <article class="plan plan-featured">
-          <h3>Premium</h3>
-          <ul>
-            <li>Tot ce e gratuit, plus 30 de careuri</li>
-            <li>Pachete tematice noi, incluse fără cost suplimentar</li>
-            <li>Plată unică în App Store</li>
-            <li>Fără abonament și fără reclame</li>
-          </ul>
-          <p class="meta">Prețul stabilit de Apple apare în aplicație înainte să confirmi cumpărarea.</p>
-        </article>
-      </div>
-      <p class="plans-cta"><a class="badge" href="https://apps.apple.com/ro/app/id6819084037?pt=129528005&amp;ct=site&amp;mt=8">Descarcă gratuit din App Store</a></p>
-    </section>
-
-    <section class="section frame support" id="suport" aria-labelledby="suport-titlu">
-      <h2 id="suport-titlu">Suport</h2>
-      <p class="section-lede">Întrebări despre careuri, achiziții sau progres? Aici găsești răspunsurile și o adresă la care poți scrie.</p>
-
-      <div class="contact" aria-labelledby="contact-titlu">
-        <h3 id="contact-titlu">Scrie-ne</h3>
-        <address>
-          <span class="meta">Editor: Eddie Roman</span>
-          <a class="email-link" href="mailto:rebuslacafea@icloud.com">rebuslacafea@icloud.com</a>
-        </address>
-        <p>Pentru o problemă tehnică, descrie ce s-a întâmplat și include versiunea aplicației și versiunea iOS. Dacă atașezi o captură, verifică să conțină doar informațiile pe care vrei să le trimiți.</p>
-        <p class="meta">Mesajele sunt folosite pentru a răspunde solicitării tale. Detalii în <a href="confidentialitate/#mesaje-suport">politica de confidențialitate</a>.</p>
-      </div>
-
-      <div class="faq" aria-labelledby="intrebari-titlu">
-        <h3 id="intrebari-titlu">Întrebări frecvente</h3>
-
-        <details>
-          <summary>Ce deblochează Premium?</summary>
-          <p>Premium include 30 de careuri disponibile acum. Pachetele tematice noi, adăugate periodic prin actualizările aplicației, sunt incluse fără cost suplimentar. Plătești o singură dată în App Store, fără abonament. Toate pachetele noi sunt incluse în aceeași achiziție și rămân în arhiva premium, accesibilă cumpărătorilor. Cele 100 de careuri gratuite rămân disponibile. Prețul furnizat de Apple este afișat în aplicație, înainte de confirmarea cumpărării.</p>
-        </details>
-
-        <details>
-          <summary>Va avea aplicația reclame?</summary>
-          <p>Nu. Rebus la cafea nu are reclame și nu va avea, nici în careurile gratuite, nici în Premium. Nu există bannere, clipuri pentru indicii sau ferestre între careuri. Aplicația se susține din achiziția unică Premium.</p>
-        </details>
-
-        <details>
-          <summary>Cum restaurez o achiziție?</summary>
-          <p>În Setări, apasă „Restaurează achizițiile”, folosind același cont App Store cu care ai cumpărat Premium. Restaurarea necesită o conexiune la internet. Dacă accesul nu apare, verifică acel cont și încearcă din nou. <a href="https://support.apple.com/en-gb/108096">Apple explică și pașii de restaurare</a>.</p>
-        </details>
-
-        <details>
-          <summary>Când se salvează progresul?</summary>
-          <p>Progresul se păstrează local pe dispozitiv, inclusiv offline. Scrierea se face după o scurtă pauză la tastare și când părăsești careul sau treci aplicația în fundal. Dacă apare un mesaj că salvarea nu a reușit, verifică spațiul liber și reîncearcă înainte să închizi aplicația. Sincronizarea iCloud se încearcă separat și depinde de conexiune, cont și condițiile sistemului.</p>
-        </details>
-
-        <details>
-          <summary>Pot continua pe alt dispozitiv?</summary>
-          <p>Da, prin iCloud, pe dispozitivele care folosesc același cont. Sincronizarea progresului este activată implicit și este disponibilă atât pentru gratuit, cât și pentru Premium. O poți opri din Setări sau poți cere o încercare prin „Sincronizează acum”. Actualizarea nu este garantată imediat. Se sincronizează progresul, selecția din fiecare careu și istoricul rezolvărilor; tema, vibrațiile și alegerea careului afișat rămân locale. „Restaurează achizițiile” recuperează separat accesul Premium prin contul App Store.</p>
-        </details>
-
-        <details>
-          <summary>Ce se întâmplă dacă folosesc două dispozitive pentru același careu?</summary>
-          <p>Aplicația păstrează o salvare întreagă după reguli stabile. O finalizare are prioritate, cu excepția unei reluări sau resetări explicite. Literele din salvări diferite nu se combină. Așteaptă reușita sincronizării înainte să continui pe celălalt dispozitiv.</p>
-        </details>
-
-        <details>
-          <summary>Ce se întâmplă dacă schimb contul iCloud?</summary>
-          <p>Sincronizarea se suspendă până când confirmi folosirea noului cont. Confirmarea permite trimiterea progresului local către acel cont. Transferul nu se face automat.</p>
-        </details>
-
-        <details>
-          <summary>Cum șterg progresul?</summary>
-          <p>În Setări, „Resetează tot progresul” golește imediat literele și statisticile locale. Resetarea se aplică celorlalte dispozitive după sincronizare, inclusiv după reactivarea ei. Cu sincronizarea oprită, copia iCloud nu se modifică imediat. Oprirea sincronizării sau ștergerea aplicației nu șterge copia iCloud existentă. Confirmarea resetării este necesară, iar achizițiile sunt păstrate.</p>
-        </details>
-
-        <details>
-          <summary>Cum scriu diacriticele?</summary>
-          <p>Folosește rândul Ă, Â, Î, Ș și Ț de deasupra tastaturii iPhone-ului. Acestea sunt litere distincte în careuri: A nu înlocuiește Ă sau Â, iar I nu înlocuiește Î. O literă ocupă o singură căsuță.</p>
-        </details>
-
-        <details>
-          <summary>Ajutoarele sunt gratuite?</summary>
-          <p>Da. „Verifică” marchează literele greșite, iar „O literă” completează o căsuță. „Indiciu” oferă o direcție de gândire fără să completeze litere; după rezolvarea cuvântului poți citi explicația. Ajutoarele sunt disponibile gratuit în colecțiile gratuite și în cele deblocate prin cumpărare.</p>
-        </details>
-
-        <details>
-          <summary>Cum funcționează „Careul zilei”?</summary>
-          <p>Este o serie de 60 de provocări gratuite, separate de cele 130 de careuri principale (100 gratuite și 30 Premium). Seria începe din ziua în care deschizi prima dată aplicația și se deschide câte o provocare pe zi, după ora României. Zilele trecute rămân accesibile în arhivă, iar cele viitoare sunt blocate. După ziua 60, toate provocările rămân în arhivă, pentru a reveni oricând.</p>
-        </details>
+      <p class="ledger-note rail">Premium este o singură plată în App Store, fără abonament, și se restaurează oricând cu același cont. Prețul stabilit de Apple apare în aplicație înainte să confirmi cumpărarea.</p>
+      <div class="cta-row rail">
+        <a class="key-iso" href="https://apps.apple.com/ro/app/id6819084037?pt=129528005&amp;ct=site&amp;mt=8"><span class="iso-top"><span class="enter-text"><strong>Descarcă gratuit</strong> din App Store</span><svg class="icon enter-icon iso-icon-inline" aria-hidden="true"><use href="#i-enter"/></svg></span><span class="iso-stem" aria-hidden="true"><svg class="icon enter-icon"><use href="#i-enter"/></svg></span></a>
       </div>
     </section>
-  </main>
 
-  <footer class="site-footer frame">
-    <p>Eddie Roman · Rebus la cafea</p>
-    <p>Actualizat la <time datetime="2026-10-06">6 octombrie 2026</time></p>
+    <section class="support frame" id="suport" aria-labelledby="suport-titlu">
+      <div class="section-head rail">
+        <h2 id="suport-titlu">Suport</h2>
+        <p>Întrebări despre careuri, achiziții sau progres? Aici găsești răspunsurile și o adresă la care poți scrie.</p>
+      </div>
+
+      <div class="support-grid rail">
+        <div class="contact" aria-labelledby="contact-titlu">
+          <h3 id="contact-titlu">Scrie-ne</h3>
+          <a class="email-link" href="mailto:rebuslacafea@icloud.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>rebuslacafea@icloud.com</a>
+          <p>Pentru o problemă tehnică, descrie ce s-a întâmplat și include versiunea aplicației și versiunea iOS. Dacă atașezi o captură, verifică să conțină doar informațiile pe care vrei să le trimiți.</p>
+          <p class="meta">Editor: Eddie Roman. Mesajele sunt folosite pentru a răspunde solicitării tale. Detalii în <a href="confidentialitate/#mesaje-suport">politica de confidențialitate</a>.</p>
+        </div>
+
+        <div class="faq" aria-labelledby="intrebari-titlu">
+          <h3 id="intrebari-titlu">Întrebări frecvente</h3>
+
+          <details>
+            <summary>Ce deblochează Premium?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Premium include 40 de careuri disponibile acum, printre care pachetul de toamnă „Strigoi și dovleci”. Pachetele tematice noi, adăugate periodic prin actualizările aplicației, sunt incluse fără cost suplimentar. Plătești o singură dată în App Store, fără abonament. Toate pachetele noi sunt incluse în aceeași achiziție și rămân în arhiva premium, accesibilă cumpărătorilor. Cele 100 de careuri gratuite rămân disponibile. Prețul furnizat de Apple este afișat în aplicație, înainte de confirmarea cumpărării.</p>
+          </details>
+
+          <details>
+            <summary>Va avea aplicația reclame?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Nu. Rebus la cafea nu are reclame și nu va avea, nici în careurile gratuite, nici în Premium. Nu există bannere, clipuri pentru indicii sau ferestre între careuri. Aplicația se susține din achiziția unică Premium.</p>
+          </details>
+
+          <details>
+            <summary>Cum restaurez o achiziție?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>În Setări, apasă „Restaurează achizițiile”, folosind același cont App Store cu care ai cumpărat Premium. Restaurarea necesită o conexiune la internet. Dacă accesul nu apare, verifică acel cont și încearcă din nou. <a href="https://support.apple.com/en-gb/108096">Apple explică și pașii de restaurare</a>.</p>
+          </details>
+
+          <details>
+            <summary>Când se salvează progresul?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Progresul se păstrează local pe dispozitiv, inclusiv offline. Scrierea se face după o scurtă pauză la tastare și când părăsești careul sau treci aplicația în fundal. Dacă apare un mesaj că salvarea nu a reușit, verifică spațiul liber și reîncearcă înainte să închizi aplicația. Sincronizarea iCloud se încearcă separat și depinde de conexiune, cont și condițiile sistemului.</p>
+          </details>
+
+          <details>
+            <summary>Pot continua pe alt dispozitiv?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Da, prin iCloud, pe dispozitivele care folosesc același cont. Sincronizarea progresului este activată implicit și este disponibilă atât pentru gratuit, cât și pentru Premium. O poți opri din Setări sau poți cere o încercare prin „Sincronizează acum”. Actualizarea nu este garantată imediat. Se sincronizează progresul, selecția din fiecare careu și istoricul rezolvărilor; tema, vibrațiile și alegerea careului afișat rămân locale. „Restaurează achizițiile” recuperează separat accesul Premium prin contul App Store.</p>
+          </details>
+
+          <details>
+            <summary>Ce se întâmplă dacă folosesc două dispozitive pentru același careu?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Aplicația păstrează o salvare întreagă după reguli stabile. O finalizare are prioritate, cu excepția unei reluări sau resetări explicite. Literele din salvări diferite nu se combină. Așteaptă reușita sincronizării înainte să continui pe celălalt dispozitiv.</p>
+          </details>
+
+          <details>
+            <summary>Ce se întâmplă dacă schimb contul iCloud?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Sincronizarea se suspendă până când confirmi folosirea noului cont. Confirmarea permite trimiterea progresului local către acel cont. Transferul nu se face automat.</p>
+          </details>
+
+          <details>
+            <summary>Cum șterg progresul?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>În Setări, „Resetează tot progresul” golește imediat literele și statisticile locale. Resetarea se aplică celorlalte dispozitive după sincronizare, inclusiv după reactivarea ei. Cu sincronizarea oprită, copia iCloud nu se modifică imediat. Oprirea sincronizării sau ștergerea aplicației nu șterge copia iCloud existentă. Confirmarea resetării este necesară, iar achizițiile sunt păstrate.</p>
+          </details>
+
+          <details>
+            <summary>Cum scriu diacriticele?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Folosește rândul Ă, Â, Î, Ș și Ț de deasupra tastaturii din aplicație. Acestea sunt litere distincte în careuri: A nu înlocuiește Ă sau Â, iar I nu înlocuiește Î. O literă ocupă o singură căsuță.</p>
+          </details>
+
+          <details>
+            <summary>Ajutoarele sunt gratuite?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Da. „Verifică” marchează literele greșite, iar „O literă” completează o căsuță. „Indiciu” oferă o direcție de gândire fără să completeze litere; după rezolvarea cuvântului poți citi explicația. Ajutoarele sunt disponibile gratuit în colecțiile gratuite și în cele deblocate prin cumpărare.</p>
+          </details>
+
+          <details>
+            <summary>Cum funcționează „Careul zilei”?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Este o serie de 60 de provocări gratuite, separate de cele 140 de careuri principale (100 gratuite și 40 Premium). Seria începe din ziua în care deschizi prima dată aplicația și se deschide câte o provocare pe zi, după ora României. Zilele trecute rămân accesibile în arhivă, iar cele viitoare sunt blocate. După ziua 60, toate provocările rămân în arhivă, pentru a reveni oricând.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="case case-bottom">
+    <div class="frame footer-inner">
+      <div class="footer-brand">
+        <img src="img/apple-touch-icon.png" alt="" width="56" height="56">
+        <p><strong>Rebus la cafea</strong> O pauză scurtă, un careu bun.</p>
+      </div>
+      <a class="key-iso" href="https://apps.apple.com/ro/app/id6819084037?pt=129528005&amp;ct=site&amp;mt=8"><span class="iso-top"><span class="enter-text"><strong>Descarcă gratuit</strong> din App Store</span><svg class="icon enter-icon iso-icon-inline" aria-hidden="true"><use href="#i-enter"/></svg></span><span class="iso-stem" aria-hidden="true"><svg class="icon enter-icon"><use href="#i-enter"/></svg></span></a>
+      <nav class="footer-nav" aria-label="Linkuri de subsol">
+        <a href="#suport">Suport</a>
+        <a href="confidentialitate/">Confidențialitate</a>
+        <a href="mailto:rebuslacafea@icloud.com">rebuslacafea@icloud.com</a>
+      </nav>
+      <p class="footer-meta">Eddie Roman · Actualizat la <time datetime="2026-10-12">12 octombrie 2026</time></p>
+    </div>
   </footer>
 </body>
 </html>
